@@ -1,0 +1,676 @@
+"'Template Screen' As screen":
+    Fill: =defaults.elementBackgroundColor
+
+    Button6_3 As button:
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =defaults.backgroundColor
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =470
+        Text: =
+        Width: =845
+        X: =1044
+        Y: =45
+        ZIndex: =1
+
+    Button6_2 As button:
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =defaults.backgroundColor
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =358
+        Text: =
+        Width: =845
+        X: =1044
+        Y: =553
+        ZIndex: =2
+
+    Button6_1 As button:
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =defaults.backgroundColor
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =358
+        Text: =
+        Width: =821
+        X: =172
+        Y: =553
+        ZIndex: =3
+
+    SideMenu_1 As cmp_SideMenu:
+        ZIndex: =4
+
+    DatePicker2 As datepicker:
+        X: =551
+        Y: =750
+        ZIndex: =5
+
+    Radio1 As radio:
+        Height: =244
+        Items: =DropDownSample
+        Width: =259
+        X: =259
+        Y: =667
+        ZIndex: =6
+
+    Checkbox3 As checkbox:
+        Text: ="Option"
+        X: =259
+        Y: =598
+        ZIndex: =7
+
+    Gallery1 As gallery.galleryVertical:
+        Fill: =Transparent
+        Height: =404
+        Items: |-
+            =
+            Table(
+                {
+                    theme: "EinfachMachen CD",
+                    primaryColor: ColorValue("#1D411D"),
+                    secondaryColor: ColorFade(ColorValue("#1D411D"),0.55),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),
+                    warningColor:ColorValue("#ffcc00"), 
+                    successColor: ColorValue("#339900"),
+                    font: "Roboto, 'Segoe UI'",
+                    fontSize: 14,
+                    borderRadius: 10
+                },
+                {
+                    theme:"eBay Kleinanzeigen",
+                    primaryColor: ColorValue("#86B817"),
+                    secondaryColor: ColorValue("#9D9D9D"),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: Black,
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "'Segoe UI'",
+                    fontSize: 16,
+                    borderRadius: 0
+                },
+                {
+                    theme:"Paulsen Gastro",
+                    primaryColor: ColorFade(ColorValue("#dea10b "),0.4),
+                    secondaryColor: LightGreen,
+                    disabledColor: Gray,
+                    backgroundColor: RGBA(30, 30, 30, 1),
+                    elementBackgroundColor: RGBA(70, 70, 70, 1),
+                    textColor: RGBA(250, 250, 250, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),         
+                    successColor: ColorValue("#339900"),
+                    font: "Arial",
+                    fontSize: 14,
+                    borderRadius: 10
+                },
+                {
+                    theme:"Zagermann",
+                    primaryColor: ColorValue("#F60606"),
+                    secondaryColor: ColorFade(ColorValue("#F60606 "),0.4),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "Bahnschrift",
+                    fontSize: 14,
+                    borderRadius: 50
+                },
+                {
+                    theme:"Felix Cordshagen Auftragsapp",
+                    primaryColor: ColorValue("#FAC710"),
+                    secondaryColor: ColorFade(ColorValue("#FAC710"),0.55),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "Bahnschrift",
+                    fontSize: 14,
+                    borderRadius: 50
+                },
+                {
+                    theme:"Christoph GmbH",
+                    primaryColor: ColorValue("#342778"),
+                    secondaryColor: RGBA(52, 39, 120, 0.5),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "Bahnschrift",
+                    fontSize: 14,
+                    borderRadius: 50
+                },
+                {
+                    theme:"Schorn Farben",  
+                    primaryColor: ColorValue("#f14626"),
+                    secondaryColor: ColorFade(ColorValue("#f14626"),0.55),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "Bahnschrift",
+                    fontSize: 14,
+                    borderRadius: 50
+                },
+                {
+                    theme:"WillBau",
+                    primaryColor: RGBA(128, 0, 1, 1),
+                    secondaryColor: ColorFade(RGBA(128, 0, 1, 1), 60%),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "Bahnschrift",
+                    fontSize: 14,
+                    borderRadius: 50
+                },
+                {
+                    theme:"Besser Zuhause",
+                    primaryColor: ColorValue("#72C4CB"),
+                    secondaryColor: RGBA(114, 196, 203, 0.5),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "Bahnschrift",
+                    fontSize: 14,
+                    borderRadius: 50
+                },
+                {
+                    theme:"BHS",
+                    primaryColor:             ColorValue("#123074"),
+                    secondaryColor:        ColorFade(ColorValue("#123074"),0.55),
+                    disabledColor: Gray,
+                    backgroundColor: White,
+                    elementBackgroundColor: RGBA(240, 240, 240, 1),
+                    textColor: RGBA(30, 30, 30, 1),
+                    errorColor: ColorValue("#cc3300"),         
+                    warningColor:ColorValue("#ffcc00"),          
+                    successColor: ColorValue("#339900"),
+                    font: "Bahnschrift",
+                    fontSize: 14,
+                    borderRadius: 50
+                }
+            )
+        Layout: =Layout.Vertical
+        TemplateFill: =ThisItem.backgroundColor
+        X: =1196
+        Y: =90
+        ZIndex: =8
+
+        Button4 As button:
+            BorderColor: =Self.Fill
+            Color: =ThisItem.backgroundColor
+            Fill: =ThisItem.primaryColor
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =ThisItem.font
+            HoverFill: =ColorFade(Self.Fill, 30%)
+            OnSelect: |-
+                =
+                Set(defaults,
+                    {
+                        primaryColor: ThisItem.primaryColor,
+                        secondaryColor: ThisItem.secondaryColor,
+                        disabledColor: Gray,
+                        backgroundColor: ThisItem.backgroundColor,
+                        elementBackgroundColor: ThisItem.elementBackgroundColor,
+                        textColor: ThisItem.textColor,
+                        errorColor: ThisItem.errorColor,
+                        warningColor: ThisItem.warningColor,
+                        successColor: ThisItem.successColor,
+                        font: ThisItem.font,
+                        fontSize: ThisItem.fontSize,
+                        borderRadius: ThisItem.borderRadius
+                    }
+                );
+                
+                
+                Set(defaults,
+                    Patch(defaults,
+                    {
+                        primaryColorHex: Match(JSON(defaults.primaryColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                        primaryColorTransparentHex: Match(JSON(defaults.primaryColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch&"4d",
+                        secondaryColorHex: Match(JSON(defaults.secondaryColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                        disabledColorHex: Match(JSON(defaults.disabledColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                        backgroundColorHex: Match(JSON(defaults.backgroundColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                        errorColorHex: Match(JSON(defaults.errorColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                        textColorHex: Match(JSON(defaults.textColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch
+                    }
+                    )
+                );
+            RadiusBottomLeft: =ThisItem.borderRadius
+            RadiusBottomRight: =ThisItem.borderRadius
+            RadiusTopLeft: =ThisItem.borderRadius
+            RadiusTopRight: =ThisItem.borderRadius
+            Size: =ThisItem.fontSize+6
+            Text: =ThisItem.theme
+            Width: =400
+            X: =132
+            Y: =15
+            ZIndex: =1
+
+    Icon3 As icon.Edit:
+        Icon: =Icon.Edit
+        X: =1413
+        Y: =613
+        ZIndex: =9
+
+    Icon4 As icon.FilterFlatFilled:
+        Icon: =Icon.FilterFlatFilled
+        X: =1480
+        Y: =613
+        ZIndex: =10
+
+    Dropdown2 As dropdown:
+        Items: =DropDownSample
+        X: =551
+        Y: =815
+        ZIndex: =11
+
+    TextInput2 As text:
+        Default: ="Text input"
+        X: =551
+        Y: =685
+        ZIndex: =12
+
+    Label3 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =53
+        Size: =defaults.fontSize+4
+        Text: ="Change Scheme"
+        Width: =640
+        X: =1196
+        Y: =45
+        ZIndex: =13
+
+    Button1 As button:
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Text: ="Button"
+        X: =559
+        Y: =593
+        ZIndex: =14
+
+    Icon4_1 As icon.FilterFlatFilled:
+        Icon: =Icon.Cancel
+        X: =1557
+        Y: =613
+        ZIndex: =16
+
+    Image4_3 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Height: =40
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="close", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.primaryColorHex&"' ", svg)
+            )
+            )
+        Width: =40
+        X: =1557
+        Y: =665
+        ZIndex: =17
+
+    Image4_4 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Height: =40
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="pencil-outline", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.primaryColorHex&"' ", svg)
+            )
+            )
+        Width: =40
+        X: =1413
+        Y: =665
+        ZIndex: =18
+
+    Image4_5 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Height: =40
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="filter", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.primaryColorHex&"' ", svg)
+            )
+            )
+        Width: =40
+        X: =1480
+        Y: =665
+        ZIndex: =19
+
+    Image4_6 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Height: =40
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="check", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.primaryColorHex&"' ", svg)
+            )
+            )
+        Width: =40
+        X: =1615
+        Y: =665
+        ZIndex: =20
+
+    Icon4_2 As icon.FilterFlatFilled:
+        Icon: =Icon.Check
+        X: =1615
+        Y: =617
+        ZIndex: =21
+
+    Icon4_3 As icon.FilterFlatFilled:
+        Icon: =Icon.Trash
+        X: =1678
+        Y: =617
+        ZIndex: =22
+
+    Image4_7 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Height: =40
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="delete-outline", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.primaryColorHex&"' ", svg)
+            )
+            )
+        Width: =40
+        X: =1678
+        Y: =665
+        ZIndex: =23
+
+    Icon4_4 As icon.FilterFlatFilled:
+        Icon: =Icon.Person
+        X: =1738
+        Y: =617
+        ZIndex: =24
+
+    Image4_8 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Height: =40
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="account", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.primaryColorHex&"' ", svg)
+            )
+            )
+        Width: =40
+        X: =1738
+        Y: =665
+        ZIndex: =25
+
+    Image4_9 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Fill: =defaults.secondaryColor
+        Height: =60
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="close", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.backgroundColorHex&"' ", svg)
+            )
+            )
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =defaults.borderRadius
+        RadiusBottomRight: =defaults.borderRadius
+        RadiusTopLeft: =defaults.borderRadius
+        RadiusTopRight: =defaults.borderRadius
+        Width: =60
+        X: =1538
+        Y: =721
+        ZIndex: =26
+
+    Image4_10 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Fill: =defaults.secondaryColor
+        Height: =60
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="pencil-outline", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.backgroundColorHex&"' ", svg)
+            )
+            )
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =defaults.borderRadius
+        RadiusBottomRight: =defaults.borderRadius
+        RadiusTopLeft: =defaults.borderRadius
+        RadiusTopRight: =defaults.borderRadius
+        Width: =60
+        X: =1394
+        Y: =721
+        ZIndex: =27
+
+    Image4_11 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Fill: =defaults.secondaryColor
+        Height: =60
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="filter", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.backgroundColorHex&"' ", svg)
+            )
+            )
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =defaults.borderRadius
+        RadiusBottomRight: =defaults.borderRadius
+        RadiusTopLeft: =defaults.borderRadius
+        RadiusTopRight: =defaults.borderRadius
+        Width: =60
+        X: =1461
+        Y: =721
+        ZIndex: =28
+
+    Image4_12 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Fill: =defaults.secondaryColor
+        Height: =60
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="check", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.backgroundColorHex&"' ", svg)
+            )
+            )
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =defaults.borderRadius
+        RadiusBottomRight: =defaults.borderRadius
+        RadiusTopLeft: =defaults.borderRadius
+        RadiusTopRight: =defaults.borderRadius
+        Width: =60
+        X: =1605
+        Y: =721
+        ZIndex: =29
+
+    Image4_13 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Fill: =defaults.secondaryColor
+        Height: =60
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="delete-outline", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.backgroundColorHex&"' ", svg)
+            )
+            )
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =defaults.borderRadius
+        RadiusBottomRight: =defaults.borderRadius
+        RadiusTopLeft: =defaults.borderRadius
+        RadiusTopRight: =defaults.borderRadius
+        Width: =60
+        X: =1677
+        Y: =721
+        ZIndex: =30
+
+    Image4_14 As image:
+        BorderColor: =Transparent
+        DisabledBorderColor: =Transparent
+        DisabledFill: =Transparent
+        Fill: =defaults.secondaryColor
+        Height: =60
+        Image: |-
+            =With({svg: LookUp(MaterialDesignIcons, name="account", svgPath)},
+            "data:image/svg+xml;utf8, " & EncodeUrl(
+            //Set Map svg text
+            Substitute(svg, "<svg ", "<svg fill='"&defaults.backgroundColorHex&"' ", svg)
+            )
+            )
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =defaults.borderRadius
+        RadiusBottomRight: =defaults.borderRadius
+        RadiusTopLeft: =defaults.borderRadius
+        RadiusTopRight: =defaults.borderRadius
+        Width: =60
+        X: =1746
+        Y: =721
+        ZIndex: =31
+
+    Button6 As button:
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =defaults.backgroundColor
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =470
+        Text: =
+        Width: =If(Toggle1, 821, 1727)
+        X: =172
+        Y: =45
+        ZIndex: =32
+
+    Toggle1 As toggleSwitch:
+        Default: =true
+        X: =1778
+        Y: =62
+        ZIndex: =33
+
+    Label1 As label:
+        Height: =52
+        Text: ="PowerApps Icons"
+        Width: =245
+        X: =1077
+        Y: =613
+        ZIndex: =37
+
+    Label1_1 As label:
+        Height: =38
+        Text: ="Material Design Icons (SVG)"
+        Width: =265
+        X: =1076
+        Y: =667
+        ZIndex: =38
+
+    Label1_2 As label:
+        Height: =52
+        Text: ="Komponenten"
+        Width: =245
+        X: =1077
+        Y: =809
+        ZIndex: =39
+
+    cmp_MD_Button_7 As cmp_MD_Button:
+        buttonText: ="ACCOUNT"
+        svgIcon: =LookUp(MaterialDesignIcons, name=Lower(Self.buttonText), svgPath)
+        X: =1378
+        Y: =795
+        ZIndex: =40
+
+    cmp_MD_ContrastChecker_3 As cmp_MD_ContrastChecker:
+        Fill: =ColorValue(cmp_MD_ContrastChecker_3.backGroundColor)
+        X: =231
+        Y: =98
+        ZIndex: =41
+
+    cmp_MD_Button_1 As cmp_MD_Button:
+        borderThickness: =0
+        boxShadow: =false
+        buttonText: =""
+        outlinedButton: =true
+        svgIcon: =LookUp(MaterialDesignIcons, name="heart", svgPath)
+        Width: =90
+        X: =1670
+        Y: =795
+        ZIndex: =42
+
+    cmp_MD_Button_2 As cmp_MD_Button:
+        borderThickness: =0
+        boxShadow: =false
+        buttonText: =""
+        primaryColor: =defaults.secondaryColor
+        svgIcon: =LookUp(MaterialDesignIcons, name="heart", svgPath)
+        Width: =90
+        X: =1760
+        Y: =795
+        ZIndex: =43
+

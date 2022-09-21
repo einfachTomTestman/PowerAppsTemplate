@@ -1,0 +1,17 @@
+[
+  {
+    "Data": "[{\"SampleHeading\":\"Header Item 1\",\"SampleImage\":\"\",\"SampleText\":\"Item 1\"}]",
+    "IsSampleData": true,
+    "IsWritable": false,
+    "Name": "CustomGallerySample",
+    "OrderedColumnNames": [
+      "SampleImage",
+      "SampleHeading",
+      "SampleText"
+    ],
+    "OriginalName": "CustomGallerySample",
+    "OriginalSchema": "*[SampleHeading:s, SampleImage:i, SampleText:s]",
+    "Schema": "*[SampleHeading:s, SampleImage:i, SampleText:s]",
+    "Type": "StaticDataSourceInfo"
+  }
+]

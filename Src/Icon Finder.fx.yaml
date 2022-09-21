@@ -1,0 +1,63 @@
+"'Icon Finder' As screen":
+
+    SideMenu_3 As cmp_SideMenu:
+        ZIndex: =3
+
+    gal_Icons As gallery.galleryVertical:
+        Fill: =defaults.elementBackgroundColor
+        Height: =653
+        Items: =Filter(MaterialDesignIcons, TextInput1.Text in name Or TextInput1.Text)
+        Layout: =Layout.Vertical
+        TemplateFill: =If(ThisItem.IsSelected, ColorValue(defaults.primaryColorHex&"4d"))
+        X: =132
+        Y: =96
+        ZIndex: =4
+
+        Label5_1 As label:
+            Color: =If(ThisItem.IsSelected, defaults.primaryColor, defaults.textColor)
+            Height: =46
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.name
+            Width: =476
+            X: =1
+            Y: =13
+            ZIndex: =1
+
+        Image4_2 As image:
+            BorderColor: =Transparent
+            DisabledBorderColor: =Transparent
+            DisabledFill: =Transparent
+            Height: =68
+            Image: |-
+                ="data:image/svg+xml;utf8, " & EncodeUrl(
+                //Set Map svg text
+                Substitute(ThisItem.svgPath, "<svg ", "<svg fill='"&If(ThisItem.IsSelected, defaults.primaryColorHex, defaults.textColorHex)&"' ", ThisItem.svgPath)
+                )
+            OnSelect: =Select(Parent)
+            Tooltip: =ThisItem.svgPath
+            Width: =126
+            X: =503
+            ZIndex: =2
+
+    TextInput1 As text:
+        Default: =""
+        HintText: ="Search for Icon"
+        X: =132
+        Y: =30
+        ZIndex: =5
+
+    Label2 As label:
+        Height: =210
+        Text: =gal_Icons.Selected.svgPath
+        Width: =565
+        X: =772
+        Y: =96
+        ZIndex: =8
+
+    Label4 As label:
+        Text: |-
+            ="SVG Code: "
+        X: =772
+        Y: =56
+        ZIndex: =9
+

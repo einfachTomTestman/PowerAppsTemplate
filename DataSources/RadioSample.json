@@ -1,0 +1,15 @@
+[
+  {
+    "Data": "[{\"Value\":\"Item 1\"},{\"Value\":\"Item 2\"},{\"Value\":\"Item 3\"},{\"Value\":\"Item 4\"}]",
+    "IsSampleData": true,
+    "IsWritable": false,
+    "Name": "RadioSample",
+    "OrderedColumnNames": [
+      "Value"
+    ],
+    "OriginalName": "RadioSample",
+    "OriginalSchema": "*[Value:s]",
+    "Schema": "*[Value:s]",
+    "Type": "StaticDataSourceInfo"
+  }
+]

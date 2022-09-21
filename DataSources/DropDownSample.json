@@ -1,0 +1,15 @@
+[
+  {
+    "Data": "[{\"Value\":\"Item 1\"},{\"Value\":\"Item 2\"},{\"Value\":\"Item 3\"},{\"Value\":\"Item 4\"}]",
+    "IsSampleData": true,
+    "IsWritable": false,
+    "Name": "DropDownSample",
+    "OrderedColumnNames": [
+      "Value"
+    ],
+    "OriginalName": "DropDownSample",
+    "OriginalSchema": "*[Value:s]",
+    "Schema": "*[Value:s]",
+    "Type": "StaticDataSourceInfo"
+  }
+]

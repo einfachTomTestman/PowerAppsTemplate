@@ -1,0 +1,122 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |+
+        =
+        //App für die Templates zur Nutzung von Power Apps - Stand 20.09.2022
+<<<<<<< HEAD
+        //Kommentar von Kim um 15:27
+=======
+        //Kommentar von Marcel um 15:28
+>>>>>>> 15e8d6b2eab1f03f17d783d2ca481142e0e0b72b
+        //Color Template definieren - An das eigene Design im Unternehmen anpassen, durch austauschen der Farbcodes
+        Set(defaults,
+            {
+                theme: "EinfachMachen CD",
+                primaryColor: ColorValue("#1D411D"),
+                secondaryColor: ColorFade(ColorValue("#1D411D"),0.55),
+                disabledColor: Gray,
+                backgroundColor: White,
+                elementBackgroundColor: RGBA(240, 240, 240, 1),
+                textColor: RGBA(30, 30, 30, 1),
+                errorColor: ColorValue("#cc3300"),
+                warningColor:ColorValue("#ffcc00"), 
+                successColor: ColorValue("#339900"),
+                font: "Roboto, 'Segoe UI'",
+                fontSize: 14,
+                borderRadius: 10
+            }
+        );
+        
+        Set(defaults,
+            Patch(defaults,
+            {
+                primaryColorHex: Match(JSON(defaults.primaryColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                primaryColorTransparentHex: Match(JSON(defaults.primaryColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch&"4d",
+                secondaryColorHex: Match(JSON(defaults.secondaryColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                disabledColorHex: Match(JSON(defaults.disabledColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                backgroundColorHex: Match(JSON(defaults.backgroundColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                errorColorHex: Match(JSON(defaults.errorColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                warningColorHex: Match(JSON(defaults.warningColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                successColorHex: Match(JSON(defaults.successColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch,
+                textColorHex: Match(JSON(defaults.textColor,IgnoreUnsupportedTypes),"#[a-fA-F0-9]{6}").FullMatch
+            }
+            )
+        );
+        
+        /*
+        Diesen Code im App.OnStart ganz oben einfügen und Anwendung dokumentieren
+        *********************************************************************************************************************************************************************************************
+        DOKUMENTATION ZUR POWER APP: 
+        STAND DER DOKUMENTATION: 13.06.2022
+        *********************************************************************************************************************************************************************************************
+        
+        0) ALLGEMEINE INFORMATIONEN
+        
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        1) COLLECTIONS
+        1.1) STAMMDATEN
+        
+        1.2) BEWEGUNGSDATEN
+        
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        2) SCREEN DESCRIPTION
+        
+        3) PATCHES & UPDATES (explizit: Patch(), SubmitForm(), UpdateIf(), ForAll(), Remove(), RemoveIf()
+        
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        4) FLOWS
+        
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        5) CHANGELOG
+        - DD.MM.YY - KTB - Deploy und Release der Version 1.11 Beta
+        
+        */
+        
+        //Startzeit, Versionsnummer und Nutzer erfassen
+        Set(glbStartTime,Now());
+        Set(glbVersionsNummer,"1.0");
+        Set(glbMSUser,User());
+        //Set(glbUser,LookUp(Benutzer,Mitarbeiter = glbMSUser.FullName));
+        
+        
+        //********************************************************************************************************************************************\\
+        //Variblen für individuelle Richtlinien im Unternehmen definieren. 
+            
+        //z.B. Aktuelle Wochenennummer setzen
+        Set(glbCurrentWeekNum, ISOWeekNum(Now()));
+        
+        //********************************************************************************************************************************************\\
+        
+        //Dauer der Übertragung erfassen  
+        Set(
+            glbDuration,
+            Round(
+                DateDiff(
+                    glbStartTime,
+                    Now(),
+                    Milliseconds
+                ) / 1000,
+                2
+            )
+        );
+        
+        //Duration ausgeben
+        Notify(
+            "Ladezeit: " & glbDuration,
+            NotificationType.Success
+        );
+        
+        //Ladespinner ausblenden
+        Set(glbLoading,false);
+        
+        
+        
+        
+        
+        
+        
+        
+    StartScreen: |-
+        =//Parameter für anderen Startscreen
+        If(Param("screen")="screen2", 'Template Screen', New)
+
