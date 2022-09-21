@@ -2,12 +2,8 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |+
         =
-        //App für die Templates zur Nutzung von Power Apps - Stand 20.09.2022
-<<<<<<< HEAD
-        //Kommentar von Kim um 15:27
-=======
-        //Kommentar von Marcel um 15:28
->>>>>>> 15e8d6b2eab1f03f17d783d2ca481142e0e0b72b
+
+        //Ein Kommentar
         //Color Template definieren - An das eigene Design im Unternehmen anpassen, durch austauschen der Farbcodes
         Set(defaults,
             {
